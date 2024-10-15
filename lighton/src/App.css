@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.lampa{
+  font-family: "Permanent Marker", cursive;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #000000;
+  cursor: pointer;
+  line-height: 100px;
+  font-size: 60px;
+  margin: 1px;
+  background-color: #5f5f5f96;
+  border-radius: 50%;
+}
+
+article{
+display: grid;
+grid-template-columns: repeat(3, auto);
+width: 300px;
+margin: 2px auto;
+color: #000000;
+margin-top: 20px;
+}
+
+.le{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: #7474749a;
+}
+
+.fel{
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(242, 255, 64, 0.829);
+}
