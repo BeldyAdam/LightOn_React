@@ -1,26 +1,17 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import Jatekter from './components/Jatekter.js';
+import { KattContext } from './context/KattContext';
 
 function App() {
-  const [lista, setLista]=useState([false, false, false, false, false, false, false, false, false]);
-  function katt(adat){
-    const slista=[...lista]
-    if(slista[adat]==true){
-      slista[adat]=false
-    }else{
-      slista[adat]=true
-    }
-    setLista([...slista])
-    console.log(lista)
-  }
+  const {lista}=useContext(KattContext);
   return (
     <div className="App">
       <header className="App-header">
-          Light On - React
+          <h1>Light On - React</h1>
       </header>
       <article>
-        <Jatekter lista={lista} katt={katt}/>
+        <Jatekter lista={lista}/>
       </article>
       <footer>Béldy Ádám</footer>
     </div>
